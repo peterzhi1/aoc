@@ -1,19 +1,24 @@
 # lol
 # haha
-_DATA=open('calories.txt','r').read().split('\n')
 
-def elf_cal():
+#context manager
+# with open('calories.txt','r') as file:
+#     _DATA = file.read().split('\n')
+
+def elf_cals():
     cal = [[]]
-    for i in _DATA:
-        if i == '':
-            cal.append([])
-        else:
-            cal[-1].append(int(i))
+    with open('calories.txt','r') as file:
+        for line in file:
+            line = line.strip()
+            if line == '':
+                cal.append([])
+            else:
+                cal[-1].append(int(line))
     return cal
 
 def max_cal():
-    cal_sum =[]
-    for i in elf_cal():
+    cal_sum = []
+    for elf_cal in elf_cals():
         cal_sum.append(sum(i))
     cal_sum.sort()
     print(f'max calories: {cal_sum[-1]}')
