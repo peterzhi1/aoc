@@ -28,16 +28,16 @@
 
 # total = 4 +1 + 7 = 12
 
-# LOGIC  ------------------------------------------------------
+# WIP  ------------------------------------------------------
 
-import pytest 
+# import pytest 
 
-@pytest.mark.parametrize(
-    ['outcome':'score'],
-    ['win':6, 'lose':0, 'draw':3]
-)
+# @pytest.mark.parametrize(
+#     ['input':'score'],
+...
+# )
     
-def test_strat_one():
-    assert sum(game_tally()) == 15
+# def test_tally():
+
 
 
