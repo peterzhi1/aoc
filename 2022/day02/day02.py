@@ -8,14 +8,12 @@ MAP = {'X':'A', 'Y':'B', 'Z':'C'}
 # value beats given key
 WIN_GIVEN = {'A':'B', 'B':'C', 'C':'A'}
 
+# create list of games
 def games_list():
-    games = []
     with open('data/strategy.txt','r') as file:
-        for line in file:
-            line = line.strip()
-            games.append(line)
+        games = file.read().split('\n')
     return games
-
+    
 # part one
 def strat_one():
     score=0
