@@ -1,5 +1,5 @@
 # combine functions, remove redundancy later
-# union
+# intersection
 def find_covered(pair):
     fs = int(pair.split(',')[0].split('-')[0])
     fe = int(pair.split(',')[0].split('-')[-1])
@@ -8,7 +8,7 @@ def find_covered(pair):
     if ((fs-ss)>=0 and (se-fe)>=0) or ((ss-fs)>=0 and (fe-se)>=0):
         return pair
         
-# intersection
+# union
 def find_overlapped(pair):
     fs = int(pair.split(',')[0].split('-')[0])
     fe = int(pair.split(',')[0].split('-')[-1])
