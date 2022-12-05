@@ -1,5 +1,6 @@
 # value map, doesn't work if not unique
-# VALUE = {nk:nv for k,nv in [(['A','X'],1),(['B','Y'],2),(['C','Z'],3)] for nk in k}
+# VALUE = {nk:nv for k,nv in [(['A','X'],1),(['B','Y'],2),(['C','Z'],3)] 
+# for nk in k}
 
 # map letter to value
 VALUE = {'A':1, 'B':2, 'C':3}
