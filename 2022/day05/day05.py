@@ -41,7 +41,6 @@ def rearrange(type):
         for i in range(0,len(cargo)):
             cargo[i] = [n for n in cargo[i] if n != ' ']
         # stack cargo
-        # for crane in cranes:
         if type == '9001':
             move_cargo_9001(cargo,cranes)
         else:  
@@ -49,7 +48,6 @@ def rearrange(type):
     return cargo
 
 def main():
-    # print(rearrange('standard'))
     part1 = ''
     for c in rearrange('standard'):
         part1 = part1 + c[-1]
