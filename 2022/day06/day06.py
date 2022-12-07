@@ -1,4 +1,5 @@
 
+
 def is_unique(str: str):
     if len(str) == len(set(str)):
         return True
