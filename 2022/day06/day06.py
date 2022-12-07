@@ -3,7 +3,8 @@
 def is_unique(str: str):
     if len(str) == len(set(str)):
         return True
-        
+
+
 def subroutine(str: str, length: int):
     i = 0
     while i < len(str):
@@ -12,6 +13,7 @@ def subroutine(str: str, length: int):
         else:
             return i+length
             break
+
 
 def main(length):
     with open('data/signal.txt','r') as file:
